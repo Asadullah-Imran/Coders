@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap css (script part)-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- for font -->
+    <script
+      src="https://kit.fontawesome.com/13db3b3d95.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div>
+        <img src="Images/hero.png" alt="home page pic" class="hero-pic" />
+      </div>
+    </main>
+    <section>
+      <div class="container py-5">
+        <div class="row-cols-1">
+          <h1>Problem Number 001</h1>
+          <h2>
+            Write a program in C to find the number of times a given word
+            appears in the given string (case insensitive).
+          </h2>
+        </div>
+
+        <div class="row pt-3">
+          <div class="col-sm-6 col-12">
+            <h3>Sample Input:</h3>
+            <p>"The string where the word the present more than once."</p>
+            <p>3</p>
+            <p>"The"</p>
+          </div>
+          <div class="col-sm-6 col-12">
+            <h3>Sample Output:</h3>
+            <p>The frequency of the word of "THE" is 3</p>
+            <p>
+              The Highest frequency of character 'e' appears number of times : 9
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-light">
+      <div class="container">
+        <div class="">
+          <form action="https://formspree.io/f/mleyjwbb" method="POST">
+            <div class="row pb-3">
+              <div class="col-12 col-sm-5">
+                <label for="formEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="formEmail"
+                  placeholder="name@xyz.com"
+                  required
+                />
+              </div>
+              <div class="col-12 col-sm-4">
+                <label for="formId" class="form-label">ID</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="formId"
+                  placeholder="011231XXXX"
+                  required
+                />
+              </div>
+              <div class="col-12 col-sm-3">
+                <label for="formQuestionNo" class="form-label">Q. No.</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="formQuestionNo"
+                  placeholder="00XX"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-floating pb-3">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="formCodeSubmit"
+                style="height: 200px"
+                required
+              ></textarea>
+              <label for="formCodeSubmit">Your Code</label>
+            </div>
+
+            <!-- your other form fields go here -->
+            <div>
+              <button class="btn btn-primary" type="submit">Submit Code</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

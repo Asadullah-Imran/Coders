@@ -1,0 +1,8 @@
+.hero-pic {
+  width: 100%;
+  min-height: 300px;
+  object-fit: cover;
+}
+p {
+  font-size: 1.5rem;
+}
