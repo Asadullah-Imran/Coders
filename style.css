@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 .hero-pic {
   width: 100%;
   min-height: 300px;
@@ -5,4 +9,57 @@
 }
 p {
   font-size: 16px;
+}
+/* .zindex {
+  z-index: -1;
+} */
+.problems-bg {
+  background-image: url(/Images/problems.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+}
+.problem-box {
+  height: 120px;
+}
+.card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+
+  backdrop-filter: blur(1rem);
+  box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  border-right-color: rgba(255, 255, 255, 0.1);
+}
+.btn {
+  border-radius: 2rem;
+}
+.btn:hover {
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+}
+/* accordion */
+.accordion {
+  max-width: 800px !important;
+  margin: 50px auto;
+  box-shadow: 0 2px 25px 0 rgba(110, 130, 208, 0.18);
+}
+.accordion-button {
+  background-color: #ec1934 !important;
+  color: white !important;
+  position: relative;
+  box-shadow: none !important;
+}
+.accordion-button:active,
+.accordion-button:focus {
+  border: none !important;
+}
+.accordion-button:hover {
+  background: #ff476c !important;
 }
