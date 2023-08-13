@@ -61,8 +61,9 @@
           </div>
         </div>
       </nav>
-      <div class="problems-bg py-4">
-        <div class="container">
+      <div class="problems-bg">
+        <img src="Images/problems.png" alt="hero pic" />
+        <div class="container py-md-5 py-sm-4 py-2">
           <div class="row">
             <div class="col-6 d-flex justify-content-center">
               <div class="card m-2 text-center">
@@ -114,7 +115,9 @@
     </main>
     <section id="string">
       <div class="container">
-        <h1 class="text-center pt-4 pb-2">String Problem</h1>
+        <h1 class="text-center mt-sm-0 mt-5 pt-5 pb-sm-2 pb-0">
+          String Problem
+        </h1>
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
@@ -158,6 +161,163 @@
                     </p>
                   </div>
                 </div>
+                <!-- new edit part -->
+                <div>
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample"
+                  >
+                    See Submission
+                  </button>
+
+                  <div
+                    class="offcanvas offcanvas-start"
+                    tabindex="-1"
+                    id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel"
+                  >
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                        String Submission
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div>
+                        <h6>Problem 001</h6>
+                        <!-- modal code start -->
+
+                        <!-- Scrollable modal -->
+                        <!-- Button trigger modal -->
+                        <button
+                          type="button"
+                          class="btn btn-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#staticBackdrop"
+                        >
+                          Abdullah's Code
+                        </button>
+
+                        <!-- Modal -->
+                        <div
+                          class="modal fade"
+                          id="staticBackdrop"
+                          data-bs-backdrop="static"
+                          data-bs-keyboard="false"
+                          tabindex="-1"
+                          aria-labelledby="staticBackdropLabel"
+                          aria-hidden="true"
+                        >
+                          <div
+                            class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                          >
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5
+                                  class="modal-title"
+                                  id="staticBackdropLabel"
+                                >
+                                  Abdullah's code
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body">
+                                #include &#60;stdio.h&#62; <br />
+                                #include &#60;string.h&#62;<br />
+                                #include &#60;ctype.h&#62;<br />
+                                #define N 100<br />
+                                void makelow(char str1[]);<br />
+                                int strcom(char str1[], char str[]);<br />
+
+                                int main()<br />
+                                {<br />
+                                char str1[N], str2[N], temp[N];<br />
+                                fgets(str1, N, stdin);<br />
+                                fgets(str2, N, stdin);<br />
+                                str1[strlen(str1) - 1] = '\0';<br />
+                                str2[strlen(str2) - 1] = '\0';<br />
+                                makelow(str1);<br />
+                                makelow(str2);<br />
+                                int count = strcom(str1, str2);<br />
+                                printf("%d\n", count);<br />
+
+                                return 0;<br />
+                                }<br />
+
+                                void makelow(char str1[])<br />
+                                {<br />
+                                for (int i = 0; str1[i] != '\0'; i++)<br />
+                                {<br />
+                                if (str1[i] &#62;= 65 && str1[i] &#60;= 90)<br />
+                                {<br />
+                                str1[i] = str1[i] + 32;<br />
+                                }<br />
+                                }<br />
+                                }<br />
+                                int strcom(char str1[], char str2[])<br />
+                                {<br />
+                                int i, j, count = 0;<br />
+                                int len1 = strlen(str1);<br />
+                                int len2 = strlen(str2);<br />
+                                if (len1 &#60; len2)<br />
+                                {<br />
+                                return 0;<br />
+                                }<br />
+                                for (i = 0; i &#60;= len1 - len2; i++)<br />
+                                {<br />
+                                for (j = 0; j &#60; len2; j++)<br />
+                                {<br />
+                                if (str1[i + j] != str2[j])<br />
+                                {<br />
+                                break;<br />
+                                }<br />
+                                if (j == len2 - 1)<br />
+                                {<br />
+                                count++;<br />
+                                }<br />
+                                }<br />
+                                }<br />
+                                return count;<br />
+                                }<br />
+                              </div>
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                  data-bs-dismiss="modal"
+                                >
+                                  Close
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-primary"
+                                  data-bs-dismiss="modal"
+                                >
+                                  Understood
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Modal code end -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end real -->
               </div>
             </div>
           </div>
